@@ -24,7 +24,7 @@ ReactDOM.render(<C3Chart data={data} />, mountNode);
 
 You can see the `docs` for more details.
 
-[Demo]: http://bcbcarl.github.io/react-c3js/
+[Demo]: http://spytec.github.io/react-c3js/
 
 ## Installation
 
@@ -89,5 +89,5 @@ Check out [C3.js Reference](http://c3js.org/reference.html) for more details.
 
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/react-c3js.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/react-c3js
+[npm-image]: https://img.shields.io/npm/v/@spytec/react-c3js.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@spytec/react-c3js

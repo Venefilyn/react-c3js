@@ -1,7 +1,7 @@
 {
-  "name": "react-c3js",
+  "name": "@spytec/react-c3js",
   "version": "0.1.20",
-  "description": "React component for C3.js",
+  "description": "React component for C3.js. Cloned from bcbcarl/react-c3js",
   "main": "react-c3js.js",
   "files": [
     "*.md",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bcbcarl/react-c3js.git"
+    "url": "https://github.com/SpyTec/react-c3js.git"
   },
   "keywords": [
     "react",
@@ -24,12 +24,12 @@
     "chart",
     "graph"
   ],
-  "author": "Carl X. Su <bcbcarl@gmail.com>",
+  "author": "Eric Gustavsson <spytec13@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bcbcarl/react-c3js/issues"
+    "url": "https://github.com/SpyTec/react-c3js/issues"
   },
-  "homepage": "https://github.com/bcbcarl/react-c3js#readme",
+  "homepage": "https://github.com/SpyTec/react-c3js#readme",
   "peerDependencies": {
     "prop-types": "^15.5.0",
     "react": "^15.5.0 || ^16.0.0",
