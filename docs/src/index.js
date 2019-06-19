@@ -11,8 +11,8 @@ const chartData = {
       data3: [200, 310, 150, 100, 180]
     },
     newData: {
-      data4: [30, 200, 100, 400, 150],
-      data5: [50, 20, 10, 40, 15]
+      data4: [30, 200, 100, 400, 150, 250],
+      data5: [50, 20, 10, 40, 15, 25]
     }
   },
   bar: {
@@ -25,7 +25,7 @@ const mountNode = document.getElementById('react-c3js');
 
 ReactDOM.render(
   <div>
-    <h1>react-c3js</h1>
+    <h1>@spytec/react-c3js</h1>
     <h2>Line Chart</h2>
     <DynamicChart
       initData={chartData.line.initData}
