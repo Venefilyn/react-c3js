@@ -1,5 +1,5 @@
 {
-  "name": "hello-c3js",
+  "name": "@spytec/hello-c3js",
   "version": "0.0.1",
   "description": "An example for react-c3js",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "build": "browserify src/index.js -o app.js -t babelify",
     "start": "budo src/index.js:app.js --live -- -t babelify"
   },
-  "author": "Carl X. Su <bcbcarl@gmail.com>",
+  "author": "Eric Gustavsson <spytec13@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "react": "^15.5.0",

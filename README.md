@@ -29,7 +29,7 @@ You can see the `docs` for more details.
 ## Installation
 
 ```
-$ npm install --save react-c3js
+$ npm install --save c3 react-c3js
 ```
 
 ## Contributing
