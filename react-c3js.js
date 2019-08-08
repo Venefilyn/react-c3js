@@ -74,18 +74,9 @@ var C3Chart = function (_React$Component) {
   }, {
     key: 'loadNewData',
     value: function loadNewData(data) {
-      this.chart.load(data);
-    }
-  }, {
-    key: 'unloadData',
-    value: function unloadData(data) {
-      var _this2 = this;
+      var unload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
-      this.chart.unload({
-        done: function done() {
-          return _this2.loadNewData(data);
-        }
-      });
+      this.chart.load(_extends({}, data, { unload: unload }));
     }
   }, {
     key: 'updateChart',
@@ -94,11 +85,7 @@ var C3Chart = function (_React$Component) {
         this.chart = this.generateChart((0, _reactDom.findDOMNode)(this), config);
       }
 
-      if (config.unloadBeforeLoad) {
-        this.unloadData(config.data);
-      } else {
-        this.loadNewData(config.data);
-      }
+      this.loadNewData(config.data, !!config.unloadBeforeLoad);
     }
   }, {
     key: 'render',

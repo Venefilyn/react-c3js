@@ -73,14 +73,8 @@ class C3Chart extends React.Component {
     return c3.generate(newConfig);
   }
 
-  loadNewData(data) {
-    this.chart.load(data);
-  }
-
-  unloadData(data) {
-    this.chart.unload({
-      done: () => this.loadNewData(data)
-    });
+  loadNewData(data, unload=false) {
+    this.chart.load({...data, unload});
   }
 
   updateChart(config) {
@@ -88,12 +82,7 @@ class C3Chart extends React.Component {
       this.chart = this.generateChart(findDOMNode(this), config);
     }
 
-    if (config.unloadBeforeLoad) {
-      this.unloadData(config.data);
-    }
-    else {
-      this.loadNewData(config.data);
-    }
+    this.loadNewData(config.data, !!config.unloadBeforeLoad);
   }
 
   render() {
