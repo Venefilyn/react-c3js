@@ -83,6 +83,9 @@ Check out [C3.js Reference](http://c3js.org/reference.html) for more details.
 * className
 * style
 * unloadBeforeLoad
+  * `boolean` - will unload data before loading
+* unloadFields
+  * `string[]` - will unload specified fields before loading, only works when `unloadBeforeLoad` is enabled.
 * onPropsChanged
 
 ## License

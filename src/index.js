@@ -40,6 +40,7 @@ class C3Chart extends React.Component {
       className: PropTypes.string,
       style: PropTypes.object,
       unloadBeforeLoad: PropTypes.bool,
+      unloadFields: PropTypes.array,
       onPropsChanged: PropTypes.func,
     };
   }
@@ -73,7 +74,8 @@ class C3Chart extends React.Component {
     return c3.generate(newConfig);
   }
 
-  loadNewData(data, unload=false) {
+  loadNewData(data, shouldUnload=false, unloadFields=undefined) {
+    let unload = shouldUnload ? unloadFields || true : shouldUnload;
     this.chart.load({...data, unload});
   }
 
@@ -81,8 +83,7 @@ class C3Chart extends React.Component {
     if (!this.chart) {
       this.chart = this.generateChart(findDOMNode(this), config);
     }
-
-    this.loadNewData(config.data, !!config.unloadBeforeLoad);
+    this.loadNewData(config.data, !!config.unloadBeforeLoad, config.unloadFields);
   }
 
   render() {
