@@ -1,6 +1,6 @@
 {
   "name": "@spytec/react-c3js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "React component for C3.js. Cloned from bcbcarl/react-c3js",
   "main": "react-c3js.js",
   "files": [
