@@ -62,6 +62,9 @@ class C3Chart extends React.Component {
   }
 
   destroyChart() {
+    if (!this.chart) {
+      return;
+    }
     try {
       this.chart = this.chart.destroy();
     } catch (err) {
