@@ -22,7 +22,7 @@
     "@types/recompose": "^0.22.0",
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
-    "budo": "^9.4.7",
+    "budo": "^11.8.4",
     "prop-types": "^15.5.4",
     "react": "^15.5.3",
     "react-dom": "^15.5.3"
